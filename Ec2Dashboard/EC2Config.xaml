@@ -1,0 +1,36 @@
+﻿<Window x:Class="Ec2Dashboard.EC2Config"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ec2Dashboard"
+        mc:Ignorable="d"
+        Title="EC2Config" Height="614.563" Width="800">
+    <Grid>
+        <ComboBox x:Name="comboBox_region" HorizontalAlignment="Left" Height="23.207" Margin="84.789,18.403,0,0" VerticalAlignment="Top" Width="215.919"/>
+        <Label x:Name="label" Content="Region" HorizontalAlignment="Left" Margin="10,16.385,0,0" VerticalAlignment="Top" Width="60.191"/>
+        <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="480.269" Margin="10,82.094,0,0" VerticalAlignment="Top" Width="207.973"/>
+        <Label x:Name="label_Copy" Content="AMIs" HorizontalAlignment="Left" Margin="10,51.134,0,0" VerticalAlignment="Top" Width="60.191"/>
+        <ListBox x:Name="listBox_Copy" HorizontalAlignment="Left" Height="480.269" Margin="222.973,82.094,0,0" VerticalAlignment="Top" Width="207.973"/>
+        <Label x:Name="label_Copy1" Content="Instance Type" HorizontalAlignment="Left" Margin="222.973,51.134,0,0" VerticalAlignment="Top" Width="86.424"/>
+        <ComboBox x:Name="comboBox_NumInstance" HorizontalAlignment="Left" Height="23.942" Margin="485.349,96.094,0,0" VerticalAlignment="Top" Width="173.543">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+        <Label x:Name="label_Copy2" Content="Number of instances" HorizontalAlignment="Left" Margin="449.991,51.134,0,0" VerticalAlignment="Top" Width="125.774"/>
+        <ComboBox x:Name="comboBox_VPC" HorizontalAlignment="Left" Height="23.942" Margin="485.349,190.937,0,0" VerticalAlignment="Top" Width="173.543">
+            <ListBoxItem Content="1"/>
+            <ListBoxItem Content="2"/>
+            <ListBoxItem Content="3"/>
+            <ListBoxItem Content="4"/>
+            <ListBoxItem Content="5"/>
+        </ComboBox>
+        <Label x:Name="label_Copy3" Content="Select VPC" HorizontalAlignment="Left" Margin="449.991,149.004,0,0" VerticalAlignment="Top" Width="125.774"/>
+        <RadioButton x:Name="radioButton_stopOnShutdown" Content="Stop on Shutdown" HorizontalAlignment="Left" Height="16.144" Margin="459.117,256.52,0,0" VerticalAlignment="Top" Width="135.818"/>
+        <RadioButton x:Name="radioButton_terminateOnShutdown_Copy" Content="Terminate on Shutdown" HorizontalAlignment="Left" Height="16.144" Margin="599.935,256.52,0,0" VerticalAlignment="Top" Width="160.033"/>
+
+    </Grid>
+</Window>

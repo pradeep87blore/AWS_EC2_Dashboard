@@ -1,0 +1,19 @@
+﻿<Window x:Class="Ec2Dashboard.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ec2Dashboard"
+        mc:Ignorable="d"
+        Title="My EC2 Dashboard" Height="639.686" Width="999.776" Initialized="Window_Initialized">
+    <Grid>
+        <ListBox x:Name="listBox_mainList" HorizontalAlignment="Left" Height="425.303" Margin="28.287,96.095,0,0" VerticalAlignment="Top" Width="386.435"/>
+        <RadioButton x:Name="radioButton_ec2Instances" Content="Created EC2 instances" HorizontalAlignment="Left" Height="24.215" Margin="465.171,99.122,0,0" VerticalAlignment="Top" Width="355.156"/>
+        <RadioButton x:Name="radioButton_securityGroups" Content="Security Groups" HorizontalAlignment="Left" Height="24.215" Margin="465.171,142.508,0,0" VerticalAlignment="Top" Width="355.156"/>
+        <RadioButton x:Name="radioButton_keyPairs" Content="Key Pairs" HorizontalAlignment="Left" Height="24.215" Margin="465.171,180.849,0,0" VerticalAlignment="Top" Width="355.156"/>
+        <ComboBox x:Name="comboBox_regionLister" HorizontalAlignment="Left" Height="26.233" Margin="28.287,18.404,0,0" VerticalAlignment="Top" Width="386.435" Initialized="ComboBox_regionLister_Initialized" SelectionChanged="ComboBox_regionLister_SelectionChanged"/>
+        <Label x:Name="label_aboveList" Content="" HorizontalAlignment="Left" Height="29.306" Margin="28.287,61.789,0,0" VerticalAlignment="Top" Width="386.435"/>
+        <Button x:Name="button_create" Content="Create EC2" HorizontalAlignment="Left" Height="24.248" Margin="30.64,549.179,0,0" VerticalAlignment="Top" Width="384.082" Click="Button_create_Click"/>
+
+    </Grid>
+</Window>
